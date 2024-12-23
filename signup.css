@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-image: url(home.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.left {
+	width: 50%;
+	padding: 10px;
+	float: left;
+	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.7);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  }
+  
+  .left h2 {
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 0;
+	color: #e63939;
+	text-shadow: 2px 2px #000000;
+  }
+  
+  .left p {
+	font-size: 20px;
+	color: #460808;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px #000000;
+  }
+  
+  .left form {
+	width: 80%;
+	margin-top: 50px;
+  }
+  
+  .left label {
+	font-size: 20px;
+	font-weight: 500;
+	color: #131313;
+	text-shadow: 1px 1px #000000;
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  .left input[type=text], 
+  .left input[type=password],
+  .left input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+  }
+  
+  .left button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 1px 1px #000000;
+  }
+  
+  .left button:hover {
+	background-color: #3e8e41;
+  }
+  
+  .left a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 1px 1px #000000;
+  }
+  
+  .left a:hover {
+	color: #d3d3d3;
+	text-decoration: underline;
+  }
+  
+
+.signup-link {
+	margin-top: 20px;
+	font-size: 16px;
+	color: #333;
+}
+
+.signup-link a {
+	color: #172f5c;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.right {
+	
+	padding: 40px;
+	width: 50%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.right h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 30px;
+}

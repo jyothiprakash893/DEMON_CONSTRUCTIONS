@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Interior</title>
+    <link rel="stylesheet" type="text/css" href="admininterior.css">
+</head>
+<body>
+    <h2>Add interior</h2>
+    <form action="admininterior.jsp" method="post" enctype="multipart/form-data">
+        <label for="interiorNumber">Interior Number:</label>
+        <input type="text" id="interiorNumber" name="interiorNumber" required><br>
+        
+        <label for="modelNumber">Model Number:</label>
+        <input type="text" id="modelNumber" name="modelNumber" required><br>
+        
+       
+        
+        <label for="sqfeet">Sqfeet</label>
+        <input type="number" id="sqfeet" name="sqfeet" required><br>
+        
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required><br>
+        
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" required><br>
+        
+        <input type="submit" value="Add House">
+    </form>
+</body>
+</html>

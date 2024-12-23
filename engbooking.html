@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engineer Booking Details</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: green;
+            margin-top: 20px;
+        }
+
+        .booking-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+               
+        .booking-form label {
+            display: block;
+            margin-bottom: 15x;
+        }
+
+        .booking-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .booking-form button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border:1pt
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .booking-details {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .booking-info {
+            margin-bottom: 20px;
+        }
+
+        .booking-info p {
+            margin: 10px 0;
+        }
+
+        .booking-info strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engineer Booking Details</h1>
+    <div class="booking-form">
+        <form action="engbooking.jsp" method="post">
+            <label for="engineerusername">Engineer Username:</label>
+            <input type="text" id="engineerusername" name="engineerUsername" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

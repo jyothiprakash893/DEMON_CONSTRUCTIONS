@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:content-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-image: url(home.jpg);
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+}
+
+.left {
+	flex: 1;
+	color: #e81818;
+	padding: 50px;
+}
+
+.left h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.left p {
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+.right {
+	flex: 0.8;
+	background-color: rgba(243, 238, 238, 0.9);
+	padding: 50px;
+}
+
+.right h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.right label {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	
+}
+
+.right input[type="email"],
+.right input[type="password"],
+.right select {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border:#e81818;
+	background-color: rgb(131, 225, 203);
+}
+
+.right input[type="submit"] {
+	background-color: #1abc9c;
+	color: #933d3d;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.right input[type="submit"]:hover {
+	background-color: #148f77;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add House</title>
+    <link rel="stylesheet" type="text/css" href="admincommercail.css">
+</head>
+<body>
+    <h2>Add House</h2>
+    <form action="admincommercail.jsp" method="post" enctype="multipart/form-data">
+        <label for="buildingNumber">Building Number:</label>
+        <input type="text" id="houseNumber" name="buildingNumber" required><br>
+        
+        <label for="modelNumber">Model Number:</label>
+        <input type="text" id="modelNumber" name="modelNumber" required><br>
+        
+        <label for="buildingType">Building Type:</label>
+        <input type="text" id="buildingType" name="buildingType" required><br>
+        
+        <label for="floors">Floors:</label>
+        <input type="number" id="floors" name="floors" required><br>
+        
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required><br>
+        
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" required><br>
+        
+        <input type="submit" value="Add Building">
+    </form>
+</body>
+</html>

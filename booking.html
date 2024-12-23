@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <h1>Booking Form</h1>
+    <form action="booking.jsp" method="POST">
+        <div class="form-group">
+            <label for="engineer">Engineer:</label>
+            <input type="text" id="engineer" name="engineer" required>
+        </div>
+        <div class="form-group">
+            <label for="client">Client:</label>
+            <input type="text" id="client" name="client" required>
+        </div>
+        <div class="form-group">
+            <label for="project-type">Project Type:</label>
+            <select id="project-type" name="project-type" required>
+                <option value="Residential">Customise</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Industrial">Renovation</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="project-name">Project Name:</label>
+            <input type="text" id="project-name" name="project-name" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

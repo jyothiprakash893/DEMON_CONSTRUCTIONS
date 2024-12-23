@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engineers List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engineers List</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Specialization</th>
+            <th>Experience</th>
+            <th>Photo</th>
+        </tr>
+        <%@ page import="java.util.List" %>
+        <%@ page import="com.example.Engineer" %>
+        <%@ page import="java.util.ArrayList" %>
+        <%@ page import="java.util.Iterator" %>
+        <%@ page import="java.util.stream.Collectors" %>
+        <%@ page import="java.util.stream.Stream" %>
+
+        <% List<Engineer> engineers = (List<Engineer>) request.getAttribute("engineers");
+           if (engineers != null) {
+               for (Engineer engineer : engineers) { %>
+                   <tr>
+                       <td><%= engineer.getName() %></td>
+                       <td><%= engineer.getEmail() %></td>
+                       <td><%= engineer.getSpecialization() %></td>
+                       <td><%= engineer.getExperience() %></td>
+                       <td><img src="data:image/jpeg;base64,<%= engineer.getPhoto() %>" width="100" height="100" /></td>
+                   </tr>
+               <% }
+           } %>
+    </table>
+</body>
+</html>

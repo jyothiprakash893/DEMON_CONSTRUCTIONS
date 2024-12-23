@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<h2>Sign up for MyWebsite</h2>
+			<form action="signup.jsp" method="POST">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+				<label for="userType">User Type</label>
+				<select id="userType" name="userType">
+					<option value="admin">Admin</option>
+					<option value="engineer">Engineer</option>
+					<option value="client">Client</option>
+				</select>
+
+				<input type="submit" value="Sign Up">
+			</form>
+			<div class="signup-link">
+				<p>Already have an account? <a href="login.html">Login here</a></p>
+			</div>
+		</div>
+		<div class="right">
+			<h1>MyWebsite</h1>
+			<p>A brief description about MyWebsite.</p>
+		</div>
+	</div>
+</body>
+</html>
